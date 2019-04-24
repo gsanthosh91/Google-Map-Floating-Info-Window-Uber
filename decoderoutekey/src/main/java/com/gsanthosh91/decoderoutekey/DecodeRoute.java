@@ -28,17 +28,17 @@ public class DecodeRoute {
     private Marker sourceMarker, destinationMarker;
     private MyAddress sourceAddress, destinationAddress;
 
-    DecodeRoute(Context context, GoogleMap googleMap, String encodedPolyPoints) {
+    public DecodeRoute(Context context, GoogleMap googleMap, String encodedPolyPoints) {
         this.context = context;
         this.googleMap = googleMap;
         polyz = decodePolyPoints(encodedPolyPoints);
     }
 
-    void setSourceAddress(MyAddress sourceAddress) {
+    public void setSourceAddress(MyAddress sourceAddress) {
         this.sourceAddress = sourceAddress;
     }
 
-    void setDestinationAddress(MyAddress destinationAddress) {
+    public void setDestinationAddress(MyAddress destinationAddress) {
         this.destinationAddress = destinationAddress;
     }
 
