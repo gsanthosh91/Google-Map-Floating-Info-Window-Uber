@@ -1,11 +1,11 @@
 package com.gsanthosh91.decoderoutekey;
 
 
-public class MyAddress {
+public class DecodeAddress {
     private String address;
     private String eta;
 
-    MyAddress(String address, String eta){
+    public DecodeAddress(String address, String eta){
         this.address = address;
         this.eta = eta;
     }

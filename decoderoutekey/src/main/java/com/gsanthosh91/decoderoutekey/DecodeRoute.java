@@ -26,7 +26,7 @@ public class DecodeRoute {
     private GoogleMap googleMap;
     private Context context;
     private Marker sourceMarker, destinationMarker;
-    private MyAddress sourceAddress, destinationAddress;
+    private DecodeAddress sourceAddress, destinationAddress;
 
     public DecodeRoute(Context context, GoogleMap googleMap, String encodedPolyPoints) {
         this.context = context;
@@ -34,11 +34,11 @@ public class DecodeRoute {
         polyz = decodePolyPoints(encodedPolyPoints);
     }
 
-    public void setSourceAddress(MyAddress sourceAddress) {
+    public void setSourceAddress(DecodeAddress sourceAddress) {
         this.sourceAddress = sourceAddress;
     }
 
-    public void setDestinationAddress(MyAddress destinationAddress) {
+    public void setDestinationAddress(DecodeAddress destinationAddress) {
         this.destinationAddress = destinationAddress;
     }
 
