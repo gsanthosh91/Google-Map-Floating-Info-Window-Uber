@@ -1,5 +1,7 @@
 # Google-Map-Floating-Info-Window-Uber
 
+[![](https://jitpack.io/v/gsanthosh91/Google-Map-Floating-Info-Window-Uber.svg)](https://jitpack.io/#gsanthosh91/Google-Map-Floating-Info-Window-Uber)
+
 An Android application to draw polyline on google maps with floating info window using route_key encoded string.
 
 ![Screenshot](screenshot.png)
@@ -19,7 +21,6 @@ Youtube Link https://youtu.be/ld8XkVr78x8
     
 ### Step 2. Add the dependency
     implementation 'com.github.gsanthosh91:Google-Map-Floating-Info-Window-Uber:version'
-[jitpack.io](https://jitpack.io/#gsanthosh91/Google-Map-Floating-Info-Window-Uber/)
 
 
     
