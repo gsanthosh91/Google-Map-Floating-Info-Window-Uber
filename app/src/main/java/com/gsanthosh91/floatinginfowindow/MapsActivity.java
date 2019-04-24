@@ -6,6 +6,8 @@ import android.os.Bundle;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.gsanthosh91.decoderoutekey.DecodeAddress;
+import com.gsanthosh91.decoderoutekey.DecodeRoute;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -20,12 +22,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
-        PolyUtils polyUtils = new PolyUtils(this, googleMap, "{punAgqyhNIgAWAeE[iBKLh@VdA\\z@t@rALr@SrDdC@BHj@lDPvB?t@Ax@DRBf@Df@f@lFdHcBp@QnDy@jBi@bCiA|E_CrDaBhAu@BIWQ_BmCQF_C~@");
-        polyUtils.setSourceAddress(new MyAddress("Prestige palladium bayan", "4 mins"));
-        polyUtils.setDestinationAddress(new MyAddress("Anna nagar west", null));
-        polyUtils.start();
-
+        DecodeRoute decodeRoute = new DecodeRoute(this, googleMap, "{punAgqyhNIgAWAeE[iBKLh@VdA\\z@t@rALr@SrDdC@BHj@lDPvB?t@Ax@DRBf@Df@f@lFdHcBp@QnDy@jBi@bCiA|E_CrDaBhAu@BIWQ_BmCQF_C~@");
+        decodeRoute.setSourceAddress(new DecodeAddress("Prestige palladium bayan", "4 mins"));
+        decodeRoute.setDestinationAddress(new DecodeAddress("Anna nagar west", null));
+        decodeRoute.start();
     }
 
 }
